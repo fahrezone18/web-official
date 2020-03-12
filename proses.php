@@ -1,7 +1,7 @@
 <?php
 // Secret Key ini kita ambil dari halaman Google reCaptcha
 // Sesuai pada catatan saya di STEP 1 nomor 6
-$secret_key = "isi_dengan_secret_key_nya";
+$secret_key = "6LduxeAUAAAAAFH_x0tC_gyzZY0rDdFwePbIMw0b";
 // Disini kita akan melakukan komunkasi dengan google recpatcha
 // dengan mengirimkan scret key dan hasil dari response recaptcha nya
 $verify = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
